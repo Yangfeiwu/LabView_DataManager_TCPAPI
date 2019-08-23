@@ -18,7 +18,6 @@
 				<Item Name="datatoJson.vi" Type="VI" URL="../kormeedb_api/jsondeal/datatoJson.vi"/>
 			</Item>
 			<Item Name="my_config" Type="Folder">
-				<Item Name="config.ini" Type="Document" URL="../kormeedb_api/my_config/config.ini"/>
 				<Item Name="create_config.vi" Type="VI" URL="../kormeedb_api/my_config/create_config.vi"/>
 				<Item Name="read_config.vi" Type="VI" URL="../kormeedb_api/my_config/read_config.vi"/>
 			</Item>
@@ -31,6 +30,7 @@
 			</Item>
 			<Item Name="kormeedb_upload_api.vi" Type="VI" URL="../kormeedb_api/kormeedb_upload_api.vi"/>
 		</Item>
+		<Item Name="config.ini" Type="Document" URL="../config.ini"/>
 		<Item Name="测试模块.vi" Type="VI" URL="../测试模块.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -46,6 +46,7 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="global_config.vi" Type="VI" URL="../kormeedb_api/my_config/global_config.vi"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -68,7 +69,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{C6AF25C5-2910-4F11-9A85-59C411E23BAC}</Property>
-				<Property Name="Bld_version.build" Type="Int">8</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">应用程序.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/我的应用程序/应用程序.exe</Property>
@@ -77,7 +78,7 @@
 				<Property Name="Destination[1].destName" Type="Str">支持目录</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/我的应用程序/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{02603231-B4FE-4CDE-84C9-6F8CA456DE87}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{75F689EB-CB6F-406F-A8D3-59C46D786FFF}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/测试模块.vi</Property>
@@ -89,7 +90,10 @@
 				<Property Name="Source[2].itemID" Type="Ref">/我的电脑/kormeedb_api</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/我的电脑/config.ini</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 				<Property Name="TgtF_companyName" Type="Str">China</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">我的应用程序</Property>
 				<Property Name="TgtF_internalName" Type="Str">我的应用程序</Property>
